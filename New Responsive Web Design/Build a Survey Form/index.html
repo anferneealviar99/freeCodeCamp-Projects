@@ -6,9 +6,10 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1 id="title">DC Comics Survey Form</h1>
+        <h1 id="title">DC Comics Survey</h1>
         <p id="description">
-            This survey will ask about your favourite aspects of DC Comics!
+            This survey will ask about your favourite aspects of the 
+            DC Universe!
         </p>
         <form id="survey-form">
             <fieldset>
@@ -16,15 +17,29 @@
                     Enter Your Name: <input type="text" id="name" required placeholder="John Smith">
                 </label>
                 <label for="email">
-                    Enter Your Email Address: <input type="email" id="email" required placeholder="johnsmith@email.com">
+                    Enter Your Email Address: 
+                    <input type="email" id="email" required placeholder="johnsmith@email.com">
                 </label>
                 <label for="number">
                     Enter Your Age: <input type="number" id="number" required min=13 max=120 placeholder="21">
                 </label>
             </fieldset>
             <fieldset>
+                <label for="favourite-team">
+                    What is your favourite DC Comics Team?
+                </label>
                 <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value=1>Justice League</option>
+                    <option value=2>Teen Titans</option>
+                    <option value=3>Justice Society of America</option>
+                    <option value=4>The Outsiders</option>
+                    <option value=5>Other</option>
                 </select>
+                <label for="other-team">
+                    If you chose Other, please enter the team you like below:
+                </label>
+                <input type=text id="other-team">
             </fieldset>
             <fieldset>
                 <input type="radio" id="name">
