@@ -13,14 +13,14 @@
         </p>
         <form id="survey-form">
             <fieldset>
-                <label for="name">
+                <label id="name-label">
                     Enter Your Name: <input type="text" id="name" required placeholder="John Smith">
                 </label>
-                <label for="email">
+                <label id="email-label">
                     Enter Your Email Address: 
                     <input type="email" id="email" required placeholder="johnsmith@email.com">
                 </label>
-                <label for="number">
+                <label id="number-label">
                     Enter Your Age: <input type="number" id="number" required min=13 max=120 placeholder="21">
                 </label>
             </fieldset>
@@ -36,21 +36,41 @@
                     <option value=4>The Outsiders</option>
                     <option value=5>Other</option>
                 </select>
-                <label for="other-team">
+                <label id="other-team-label">
                     If you chose Other, please enter the team you like below:
                 </label>
                 <input type=text id="other-team">
             </fieldset>
             <fieldset>
-                <label for="name"></label>
-                <input type="radio" id="name">
-                <input type="radio" id="name">  
+                <label for="superheroes-supervillains">
+                    Superheroes or Supervillains?
+                </label>
+                <label for="superheroes">
+                    <input type="radio" name="superheroes-supervillains" value="superheroes" checked class="inline">Superheroes
+                </label>
+                <label for="Supervillains">
+                    <input type="radio" name="superheroes-supervillains" value="supervillains" checked class="inline">Supervillains 
+                </label>
+                <label for="both">
+                    <input type="radio" name="superheroes-supervillains" value="both" checked class="inline">Both 
+                </label>
             </fieldset>
             <fieldset>
-                <input type="checkbox">
-            </fieldset>
-            <fieldset>
-                <textarea></textarea>
+                <label for="media">
+                    What DC Comics media do you consume?
+                </label>
+                <label for="comics">
+                    <input type="checkbox" value="comic-books" class="inline"> Comic Books
+                </label>
+                <label for="movies">
+                    <input type="checkbox" value="movies" class="inline"> Movies e.g., Dark Knight Trilogy, DCEU
+                </label>
+                <label for="video-games">
+                    <input type="checkbox" value="video-games" class="inline"> Video Games e.g., Arkham Trilogy, Injustice 
+                </label>
+                <label for="animated-movies">
+                    <input type="checkbox" value="animated-movies" class="inline"> Animated Movies e.g. DCAMU, Justice League Doom
+                </label>
             </fieldset>
             <input type="submit" value="Submit">
         </form> 
