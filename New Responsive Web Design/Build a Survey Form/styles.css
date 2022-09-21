@@ -13,7 +13,7 @@ h1, p {
     margin: 1em auto;
 }
 
-form {
+#survey-form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -25,10 +25,15 @@ label {
     margin: 0.5rem 0;
 }
 
-input, select {
+input, textarea, select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+}
+
+textarea {
+    background-color: black;
+    color: white;
 }
 
 .inline {
