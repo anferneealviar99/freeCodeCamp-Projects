@@ -30,3 +30,7 @@ input, select {
     width: 100%;
     min-height: 2em;
 }
+
+.inline {
+    display: inline;
+}
