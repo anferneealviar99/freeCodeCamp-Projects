@@ -3,6 +3,7 @@ body {
     height: 100vh;
     margin: 0;
     background-image: url(https://images8.alphacoders.com/974/974682.jpg);
+    background-size: auto;
     color: white;
     font-family: sans-serif; 
     font-size: 16px;
